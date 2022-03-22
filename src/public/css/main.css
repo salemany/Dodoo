@@ -1,5 +1,5 @@
 /*******************     RESET STYLE     *******************/
-html, body, div, span, object, iframe,
+html, body, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
@@ -53,10 +53,15 @@ a {
 
 /***********   CUSTOM STYLE   ***********/
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Hurricane', cursive;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(180,180,180,1) 50%, rgba(255,255,255,1) 100%);
+    height: inherit;
 }
 
 header {
@@ -69,8 +74,14 @@ h1 {
 }
 
 .container {
-    width: 50%;
-    margin: 0 auto;
-    background-color: rgb(252, 212, 205);
     height: 100%;
+    margin: 0 auto;
+}
+
+.cuerpo {
+    height: inherit;
+    background-color: rgb(252, 212, 205);
+    width: 70%;
+    padding: 0 10%;
+    margin: 0 auto;
 }
