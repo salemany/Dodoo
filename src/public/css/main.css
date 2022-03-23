@@ -49,6 +49,8 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    text-decoration: none;
+    color: inherit;
 }
 
 /***********   CUSTOM STYLE   ***********/
@@ -59,13 +61,18 @@ html {
 
 body {
     font-family: 'Hurricane', cursive;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(180,180,180,1) 50%, rgba(255,255,255,1) 100%);
+    background: url(../image/1944021.webp) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: inherit;
 }
 
 header {
-    background-color: rgb(254, 206, 206);
+    background: url(../image/banner-g3116cf471_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
     text-align: center;
 }
 
@@ -74,14 +81,59 @@ h1 {
 }
 
 .container {
-    height: 100%;
     margin: 0 auto;
 }
 
 .cuerpo {
     height: inherit;
-    background-color: rgb(252, 212, 205);
+    background-color: transparent;
     width: 70%;
-    padding: 0 10%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid-item {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+.flags {
+    width: 10em;
+    height: auto;
+}
+
+.card {
+    border-radius: 1em;
+    width: 70%;
+    padding: 1em;
+    margin: 2em auto;
+    background-color: rgba( 255, 255, 255, 0.1);
+}
+
+p {
+    font-size: 5em;
+}
+
+@media only screen and (max-width: 750px) {
+    h1 {
+        font-size: 8em;
+    }
+
+    .flags {
+        width: 7em;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    .flags {
+        width: 4em;
+        height: auto;
+    }
 }
